@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(226, 226, 229);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.theWholeBox {
+    padding: 5% 3%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px; 
+    margin-right: 10px;
+}
+
+
+
+.container1 {
+    padding: 30px;
+    border-radius: 7px;
+    color: white;
+    background-color: #7541c8;
+}
+
+.container1 img {
+    border: 3px solid rgba(255, 255, 255, 0.724);
+}
+
+
+.container2 {
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: #48556a;
+}
+
+
+
+.container3 {
+    padding: 20px;
+    border-radius: 7px;
+    color: #19212e;
+    background-color: #ffffff;
+}
+
+
+
+
+
+.container4 {
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: #19212e;
+}
+
+.container4 img {
+    border: 3px solid #7541c8e0;
+}
+
+.container5 {
+    color: #19212e;
+    background-color: #ffffff;
+}
+#grid-item {
+    box-shadow: 2px 7px 30px -1px rgba(0,0,0,0.22);
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding: 20px; 
+}
+#grid-item h4 {
+   font-size: 1.2rem;
+   margin-bottom: 20px;
+}
+#grid-item p {
+    opacity: 50%;
+}
+@media (min-width: 576px){
+    .theWholeBox {
+        display: flex;
+        max-width: 1300px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .leftContainer {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 73%;
+    }
+    .leftContainerTop {
+        display: flex;
+        flex-basis: 50%;
+    }
+    .leftContainerBottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+    .container1 {
+        flex-basis: 65%;
+    }
+    .container2 {
+        flex-basis: 35%;
+    }
+    .container3 {
+        flex-basis: 35%;
+    }
+    .container4 {
+        flex-basis: 65%;
+    }
+    .container5 {
+        flex-basis: 25%;
+    }
+    .leftContainer #grid-item {
+        margin-left: 15px;
+    }
+}
